@@ -1,4 +1,3 @@
-exec { 'install flask':
-  command => '/usr/bin/pip3 install flask==2.1.0',
-  path    => '/usr/local/bin:/usr/bin:/bin',
+exec { 'pip3':
+  command => '/usr/bin/apt-get -y install flask -v 2.1.0',
 }
